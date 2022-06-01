@@ -1,0 +1,17 @@
+<template>
+  <lightning-icon
+    icon-name="standard:number_input"
+    title="Simple Calculator"
+    alternative-text="Icon Not available"
+  ></lightning-icon>
+  &nbsp; Simple Calculator
+  <br />
+  <lightning-input label="Variable A" name="a" required onchange={textchange}></lightning-input>
+  <lightning-input label="Variable B" name="b" required onchange={textchange}></lightning-input>
+  <lightning-button label="add" name="+" onclick={validity1}></lightning-button>
+  <lightning-button label="sub" name="-" onclick={validity1}></lightning-button>
+  <lightning-button label="mult" name="*" onclick={validity1}></lightning-button>
+  <lightning-button label="div" name="/" onclick={validity1}></lightning-button>
+  <br />
+  output = {output}
+</template>
